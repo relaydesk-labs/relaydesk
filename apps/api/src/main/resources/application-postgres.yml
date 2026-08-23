@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: ${RELAYDESK_DB_URL:jdbc:postgresql://localhost:5432/relaydesk}
+    username: ${RELAYDESK_DB_USERNAME:relaydesk}
+    password: ${RELAYDESK_DB_PASSWORD:relaydesk}
+    driver-class-name: org.postgresql.Driver

@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: relaydesk-postgres
+    environment:
+      POSTGRES_DB: relaydesk
+      POSTGRES_USER: relaydesk
+      POSTGRES_PASSWORD: relaydesk
+    ports:
+      - "5432:5432"
+    volumes:
+      - relaydesk-postgres:/var/lib/postgresql/data
+
+volumes:
+  relaydesk-postgres:
