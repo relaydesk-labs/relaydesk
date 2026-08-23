@@ -1,0 +1,7 @@
+{
+  "project_id": "appgprj_6a8ab39e7f4081919031d0cdf035cad0",
+  "framework": "vite",
+  "source_dir": "apps/web",
+  "build_command": "npm run build",
+  "output_dir": "dist"
+}
