@@ -47,7 +47,10 @@ export function App() {
   return (
     <div className="app-shell">
       <aside className="sidebar">
-        <div className="brand">RelayDesk</div>
+        <div className="brand" aria-label="RelayDesk">
+          <RelayDeskMark />
+          <span>RelayDesk</span>
+        </div>
         <nav>
           <a className="active" href="#home">Home</a>
           <a href="#requests">My Requests</a>
@@ -156,6 +159,16 @@ export function App() {
         </section>
       </main>
     </div>
+  );
+}
+
+function RelayDeskMark() {
+  return (
+    <svg className="brand-mark" viewBox="0 0 64 64" role="img" aria-label="RelayDesk logo">
+      <rect width="64" height="64" rx="14" />
+      <path d="M18 17H35C42.18 17 47 21.29 47 27.55C47 31.95 44.49 35.35 40.55 36.9L48 47H38.33L31.98 38.05H27.05V47H18V17ZM27.05 24.35V31.15H34.48C36.7 31.15 38.03 29.83 38.03 27.75C38.03 25.7 36.7 24.35 34.48 24.35H27.05Z" />
+      <path className="brand-mark-line" d="M16 51H48" />
+    </svg>
   );
 }
 
